@@ -18,7 +18,7 @@ async def on_ready():
 
 @bot.event
 async def on_message(message):
-    if message.author.id != 1049558449022840842:
+    if message.author.id != cf.webid:
         hook.send(f"{message.author}({message.author.id}) : {message.content}")
 
 
